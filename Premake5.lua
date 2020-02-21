@@ -3,7 +3,7 @@ workspace "Basics of ray tracing"
    language "C++"
    architecture "x64"
    systemversion "latest"
-   toolset "v142"
+   toolset "v141"
    optimize "Speed"
    buildoptions { "/openmp" }
    filter "configurations:Debug"
@@ -16,7 +16,7 @@ workspace "Basics of ray tracing"
 
    targetdir ("bin/%{prj.name}/%{cfg.longname}")
    objdir ("obj/%{prj.name}/%{cfg.longname}")
-    
+
 group "01. Ray generation"
    project "Ray generation lib"
       kind "StaticLib"
@@ -99,7 +99,7 @@ group "03. Lighting"
       links "Lighting lib"
       debugargs { "--benchmark-samples", "25" }
       files {"tests/lighting_tests.cpp"}
-
+--[[
 group "04. Shadow rays"
    project "ShadowRays lib"
       kind "StaticLib"
@@ -320,3 +320,4 @@ group "10. Denoising"
       includedirs { "src" }
       links "Denoising lib"
       files { "src/denoising_main.cpp" }
+--]]
