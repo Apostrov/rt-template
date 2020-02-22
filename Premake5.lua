@@ -129,7 +129,7 @@ group "04. Shadow rays"
       links "ShadowRays lib"
       debugargs { "--benchmark-samples", "25" }
       files {"tests/shadow_rays_tests.cpp"}
---[[
+
 group "05. Reflection"
    project "Reflection lib"
       kind "StaticLib"
@@ -192,7 +192,7 @@ group "06. Refraction"
       links "Refraction lib"
       debugargs { "--benchmark-samples", "5" }
       files {"tests/refraction_tests.cpp"}
-
+--[[
 group "07. Anti-aliasing"
    project "AntiAliasing lib"
       kind "StaticLib"
