@@ -47,7 +47,7 @@ Payload ShadowRays::Hit(const Ray& ray, const IntersectableData& data, const Mat
 
 	float3 X = ray.position + ray.direction * data.t;
 	float3 N = triangle->GetNormal(data.baricentric);
-	for (auto light : lights)
+	for (auto& light : lights)
 	{
 		Ray toLight(X, light->position - X);
 		float toLightDistance = length(light->position - X);

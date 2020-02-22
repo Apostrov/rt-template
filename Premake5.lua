@@ -192,7 +192,7 @@ group "06. Refraction"
       links "Refraction lib"
       debugargs { "--benchmark-samples", "5" }
       files {"tests/refraction_tests.cpp"}
---[[
+
 group "07. Anti-aliasing"
    project "AntiAliasing lib"
       kind "StaticLib"
@@ -320,4 +320,3 @@ group "10. Denoising"
       includedirs { "src" }
       links "Denoising lib"
       files { "src/denoising_main.cpp" }
---]]

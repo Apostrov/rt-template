@@ -133,7 +133,7 @@ Payload Lighting::Hit(const Ray& ray, const IntersectableData& data, const Mater
 
 	float3 X = ray.position + ray.direction * data.t;
 	float3 N = triangle->GetNormal(data.baricentric);
-	for (auto light : lights)
+	for (auto& light : lights)
 	{
 		// Diffuse
 		Ray toLight(X, light->position - X);

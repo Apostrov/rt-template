@@ -85,7 +85,7 @@ Payload Refraction::Hit(const Ray& ray, const IntersectableData& data, const Mat
 		return summary;
 	}
 
-	for (auto light : lights)
+	for (auto& light : lights)
 	{
 		Ray toLight(X, light->position - X);
 		float toLightDistance = length(light->position - X);

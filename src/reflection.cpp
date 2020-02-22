@@ -26,7 +26,7 @@ Payload Reflection::Hit(const Ray& ray, const IntersectableData& data, const Mat
 		return TraceRay(reflection_ray, max_raytrace_depth - 1);
 	}
 
-	for (auto light : lights)
+	for (auto& light : lights)
 	{
 		Ray toLight(X, light->position - X);
 		float toLightDistance = length(light->position - X);

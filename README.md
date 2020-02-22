@@ -14,7 +14,7 @@ Don't forget `git submodule update --init --recursive` after the first clone
 Go to the project folder and run:
 
 ```sh
-premake5 vs2019
+premake5 vs2017
 ```
 
 ## Third-party tools and data
